@@ -1,36 +1,3 @@
- 
-      .swiper {
-        width: 100%;
-        height: 100%;
-      }
-
-      .swiper-slide {
-        text-align: center;
-        font-size: 18px;
-        background: #fff;
-
-        /* Center slide text vertically */
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: -webkit-flex;
-        display: flex;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
-        -webkit-justify-content: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        -webkit-align-items: center;
-        align-items: center;
-      }
-
-      .swiper-slide img {
-        display: block;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-/* ************************************** */
 @font-face {
   font-family: sepideh-bold;
   src: url(../Font/IRANSansX-Bold.woff);
@@ -40,9 +7,22 @@
   font-family: sepideh-normal;
   src: url(../Font/IRANSansX-Regular.woff);
 }
+:root{
+  --button-size:16px;
+}
+.swiper{
+  direction: rtl;
+}
 *{
   font-family: sepideh-normal;
   font-size: 14px;
+}
+img {
+  width: 100%;
+}
+ul{
+  list-style: none;
+
 }
 .header{
   position: absolute;
@@ -72,13 +52,231 @@
   color:black;
 }
 .navbar ul{
-  list-style: none;
   border-top:1px solid black;
 
 }
-.navbar-container{
-  
+.img-container{
+  position: relative;
+  overflow: hidden;
 }
-.register{
-   
+.discount{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(50px);
+  transition: 0.3s;
+}
+.detail-hidden{
+  padding: 15px;
+  width:100%;
+  text-align: right;
+}
+.discount-percent{
+  width: fit-content;
+  margin-left: 0;
+  margin-right: auto;
+}
+.product-item:hover .discount{
+  transform: translateY(0);
+}
+.product-color-badge{
+width: 20px;
+height: 20px;
+background-color: black;
+display: inline-block;
+}
+.product-button{
+
+  margin-bottom: 100px;
+  padding: 10px 20px;
+  border: 1px solid transparent;
+  background-color: #f04d7d;
+  color: #fff;
+}
+.product-button:hover{
+  border-color:#f04d7d;
+  color: #f04d7d;
+  background-color: #fff;
+}
+.nav-in-third-section{
+  margin-bottom: 40px;
+}
+.nav-in-third-section ul li{
+  font-size: 25px;
+}
+.cosmetics-container {
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.cosmetics-container span{
+  font-size: 20px;
+  background-color: #fff;
+  color: #999;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+.second-container{
+  margin-bottom: 40px;
+}
+.second-container div{
+  /* این با عکس بالا میزون نمی افته  */
+  margin:5px;
+  width: calc(25% - 10px);
+  position: relative;
+  overflow: hidden;
+ 
+}
+.second-container img{
+transition: 1.5s;
+}
+.second-container img:hover{
+  transform: scale(1.05);
+
+}
+.show-all{
+  font-size:16px
+}
+.second-container span{
+  font-size: 16px;
+  background-color: #fff;
+  color: #999;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+.watch-img-container{
+  margin-bottom: 40px;
+}
+ .watch-img-container div{
+   /* این با عکس بالا میزون نمی افته  */
+    margin:5px;
+   width: calc(50% - 10px); 
+   }
+.titles{
+  font-size: 25px;
+}
+.my-second-Swiper img{
+  width: 100%;
+}
+.background-section{
+  background-color: #e9e9e9;
+  height: 200px;
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+.down-section-in-popular-brands{
+  position: relative;
+}
+.head-in-fifth{
+  text-align: end;
+  font-size: 28px;
+}
+.card-in-main{
+  margin: 8px;
+  width: calc(25% - 16px);
+}
+.img-container{
+  position: relative;
+}
+.brand{
+  position: absolute;
+  top:0;
+  right: 0;
+}
+.product-button-in-sixth-section{
+  margin-bottom: 100px;
+  padding: 12px;
+  background-color:#fff
+ 
+}
+.product-button-in-sixth-section:hover{
+  color: #fff;
+  background-color: black;
+}
+.news{
+  font-size: 28px;
+}
+.right-div{
+  font-size: 30px;
+}
+.left-div{
+  font-size: 18px;
+}
+.nav-in-seventh div{
+  text-align: end;
+  margin-bottom: 20px;
+  font-size:15px;
+  color: #999;
+}
+#bold{
+  font-size: 25px;
+  color: black;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.swiper-button-container{
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+
+}
+.swiper-button-container .swiper-button-next, 
+.swiper-button-container .swiper-button-prev,
+.swiper-button-container .swiper-pagination{
+  position: relative;
+  top:unset;
+  left:unset;
+  right:unset;
+  bottom:unset
+}
+.swiper-button-prev::after,
+.swiper-button-next::after{
+  font-size: var(--button-size);
+  color: black;
+}
+.swiper-pagination-bullet-active{
+background-color: black;
+}
+.products{
+  padding: 80px 25px;
+}
+.products .product-item {
+  background-color: #f5f5f5;
+  text-align: right;
 }
