@@ -40,12 +40,6 @@ ul{
 .detail-container p{
   text-align: start;
 }
-.detail-container span{
-  display: inline-block;
-  text-align:left;
-}
-
-
 .search-input{
   border: none;
   font-size: 12px;
@@ -225,6 +219,9 @@ transition: 1.5s;
   font-size:15px;
   color: #999;
 }
+.top-in-left-side{
+  margin-bottom: 20px;
+}
 #bold{
   font-size: 25px;
   color: black;
@@ -288,4 +285,26 @@ background-color: black;
 }
 .products .product-item {
   text-align: right;
+}
+.eighth section{
+  position: relative;
+  margin: 80px auto 40px;
+}
+.background-border{
+  height: 500px;
+  border: 1px solid black;
+  margin:0 120px;
+  position: absolute;
+  /* top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; */
+}
+.title-in-eighth {
+  text-align: end;
+  padding: 0px 80px;
+  margin: 0px 0px 40px;
+}
+.style-in-title{
+  font-size: 28px;
 }
