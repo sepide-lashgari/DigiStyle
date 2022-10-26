@@ -690,6 +690,7 @@
             </div>
         
       </header> 
+      <!-- main-nav-mobile -->
       <main>
         <nav>
           <div class="menue d-flex ">
@@ -721,7 +722,128 @@
           </div>
         </nav>
       </main>
+      <!-- first-swiper-mobile -->
+      <section id="first-swiper-mobile">
+        <div class="first-swiper-mob-container m-auto d-flex flex-column align-items-center align-content-center">
+          <div class="logo-swiper col-3">
+            <img src="./Images/products-sugest.svg" alt="">
+          </div>
+          <div class="swiper product-slider-in-mob ">
+            <div class="swiper-wrapper col-9">
+              <div class="swiper-slide col-12">
+                <div class="product-item p-3 col-12">
+                  <div class="img-container col-9 ">
+                    <img src="Images/product-1.jpg" alt="" />
+                  </div>
+                  <div class="detail-container col-9">
+                    <p class="pt-4">
+                      ست تی شرت آستین کوتاه و شلوارک دخترانه کیکی رایکی مدل
+                    </p>
+                    <div class="d-flex py-4">
+                      <span class="mx-2">تومان</span>
+                      <span class="mx-2">۱۱۸,۰۰۰</span>
+                      <span class="last-price mx-2">۵۹۰,۰۰۰</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide col-12">
+                <div class="product-item p-3 col-12">
+                  <div class="img-container col-9 ">
+                    <img src="Images/product-1.jpg" alt="" />
+                  </div>
+                  <div class="detail-container col-9">
+                    <p class="pt-4">
+                      ست تی شرت آستین کوتاه و شلوارک دخترانه کیکی رایکی مدل
+                    </p>
+                    <div class="d-flex py-4">
+                      <span class="mx-2">تومان</span>
+                      <span class="mx-2">۱۱۸,۰۰۰</span>
+                      <span class="last-price mx-2">۵۹۰,۰۰۰</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide col-12">
+                <div class="product-item p-3 col-12">
+                  <div class="img-container col-9 ">
+                    <img src="Images/product-1.jpg" alt="" />
+                  </div>
+                  <div class="detail-container col-9">
+                    <p class="pt-4">
+                      ست تی شرت آستین کوتاه و شلوارک دخترانه کیکی رایکی مدل
+                    </p>
+                    <div class="d-flex py-4">
+                      <span class="mx-2">تومان</span>
+                      <span class="mx-2">۱۱۸,۰۰۰</span>
+                      <span class="last-price mx-2">۵۹۰,۰۰۰</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide col-12">
+                <div class="product-item p-3 col-12">
+                  <div class="img-container col-9 ">
+                    <img src="Images/product-1.jpg" alt="" />
+                  </div>
+                  <div class="detail-container col-9">
+                    <p class="pt-4">
+                      ست تی شرت آستین کوتاه و شلوارک دخترانه کیکی رایکی مدل
+                    </p>
+                    <div class="d-flex py-4">
+                      <span class="mx-2">تومان</span>
+                      <span class="mx-2">۱۱۸,۰۰۰</span>
+                      <span class="last-price mx-2">۵۹۰,۰۰۰</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <button class="product-button-in-mobile col-4">مشاهده همه</button>
+      </div>
+      </section>
+      <!-- swatch section -->
+      <section id="nbb-section">
+        <header class="header-in-nbb d-flex justify-content-between">
+          <div >از پرطرفدارترین برندها: casio</div>
+          <div>مشاهده همه</div>
+        </header>
+        <div class="grid-container">
+          <div class="grid-item">
+            <img src="./Images/swatch-1.jpg" alt="">
+            <div class="price-item-grid d-flex justify-content-between">
+              <div>۱,۲۸۶,۲۰۰ تومان</div>
+              <div>کاسیو</div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./Images/swatch-2.jpg" alt="">
+            <div class="price-item-grid d-flex justify-content-between">
+              <div>۱,۲۸۶,۲۰۰ تومان</div>
+              <div>کاسیو</div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./Images/swatch-3.jpg" alt="">
+            <div class="price-item-grid d-flex justify-content-between">
+              <div>۱,۲۸۶,۲۰۰ تومان</div>
+              <div class="title-brand">کاسیو</div>
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./Images/swatch-4.jpg" alt="">
+            <div class="price-item-grid d-flex justify-content-between">
+              <div>۱,۲۸۶,۲۰۰ تومان</div>
+              <div>کاسیو</div>
+            </div>
+          </div>
+        </div>
+
+      </section>
     </div>
+  </div>
 
     <!-- Swiper JS -->
     <script src="swiper/swiper.js"></script>
@@ -745,6 +867,17 @@
       var swiper = new Swiper(".product-slider", {
         slidesPerView: 3.3,
         spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".product-slider-in-mob", {
+        slidesPerView: 1.6,
+        spaceBetween: 30,
+        centeredSlides:true,
         pagination: {
           el: ".swiper-pagination",
           clickable: true,

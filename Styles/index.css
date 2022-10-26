@@ -127,7 +127,6 @@ display: inline-block;
   margin-bottom: 40px;
 }
 .second-container div{
-  /* این با عکس بالا میزون نمی افته  */
   margin:5px;
   width: calc(25% - 10px);
   position: relative;
@@ -157,7 +156,6 @@ transition: 1.5s;
   margin-bottom: 40px;
 }
  .watch-img-container div{
-   /* این با عکس بالا میزون نمی افته  */
     margin:5px;
    width: calc(50% - 10px); 
    }
@@ -233,8 +231,8 @@ transition: 1.5s;
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
-  background: #fff;
+  font-size: 1rem;
+  background: rgb(220, 207, 207);
 
   /* Center slide text vertically */
   display: -webkit-box;
@@ -351,7 +349,7 @@ background-color: black;
 .input{
   padding-top: 20px;
 }
-/* mobile model */
+/* mobile view */
 .nav-container-mobile{
   padding: 12px 16px;
   border-bottom: 1px solid #f5f5f5;
@@ -379,7 +377,7 @@ background-color: black;
   text-align: right;
   border:none;
   background:#f5f5f5 ;
-  color: #7b7b7b;
+  color: #f8f1f1;
   height: 36px;
   width: 100%;
   
@@ -396,7 +394,7 @@ background-color: black;
 .sub-menue-item{
   font-size: 0.7rem;
   text-align: center;
- padding: 20px;
+  margin-top: 0.8rem;
   width: 100%;
  
 }
@@ -409,6 +407,43 @@ background-color: black;
   height: 60px;
   object-fit: cover;
 }
+#first-swiper-mobile{
+  margin: 1.4rem 0;
+  padding: 1rem 2rem 0;
+}
+.logo-swiper{
+  margin: 0 0 1.4rem;
+}
+.product-button-in-mobile{
+  background-color: #f04d7d;
+  border-radius: 2px;
+  color: #fff;
+  border:none ;
+  padding: 1rem;
+  margin: 1.2rem 1rem 0;
+}
+#nbb-section{
+  padding-top: 3rem;
+}
+#nbb-section .header-in-nbb{
+  direction: rtl;
+  padding: 0 1rem;
+}
+.grid-container{
+  padding-top: 1rem;
+  display: grid;
+  grid-template-columns: auto auto;
+}
+.grid-item{
+  padding: 0.25rem 0.75rem;
+}
+.price-item-grid{
+  margin-top: 1rem;
+}
+.title-brand{
+color: #9d9d9d;;
+
+}
 @media only screen and (max-width:768px){
   #mobile-model{
     display: block;
@@ -416,6 +451,7 @@ background-color: black;
   #desktop-model{
     display: none;
   }
+ 
 }
 @media only screen and (min-width:768px){
   #mobile-model{
