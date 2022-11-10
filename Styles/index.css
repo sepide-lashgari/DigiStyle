@@ -466,6 +466,23 @@ font-weight: 500;
 .red-title-mob{
   color: #f04d7d;
 }
+#footer-in-mob{
+  padding: 3rem 0.5rem 1rem;
+}
+.advantages{
+  width: 5rem;
+  size: 25rem;
+  /* align-items: center; */
+}
+.advantages img{
+  width: 40px;
+  margin: 0 auto
+}
+.caption-advantages{
+  font-size: 0.6rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
 @media only screen and (max-width:768px){
   #mobile-model{
     display: block;
